@@ -1,9 +1,16 @@
+.header{
+    background: -webkit-linear-gradient(left, #fff, #fff, #545c64, #545c64); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #fff, #fff, #545c64, #545c64); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #fff, #fff, #545c64, #545c64); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #fff, #fff, #545c64, #545c64); /* 标准的语法 */
+}
 .header-wrap{
     margin: 0 auto;
     width: 65%;
     min-width: 1000px;
-    height: 100px;
+    height: 60px;
     overflow: hidden;
+    //background-color: rgb(84, 92, 100);
 }
 .header-logo{
     float: left;
@@ -11,23 +18,99 @@
     width: 30%;
     line-height: 60px;
     vertical-align: middle;
+    background: #fff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #545c64, #fff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #545c64, #fff);
     & > .logo{
         height: 100%;
-    }
-    & > .name{
-        height: 35%;
-        margin-bottom: 16px;
     }
 }
 .header-drop{
     float: right;
-    height: 60%;
-    width: 60%;
-    margin-top: 40px;
+    height: 100%;
+    width: 70%;
 }
-.el-main{
+.el-main {
     padding: 0;
-    .main-image{
-        height: 600px;
+    .main-title{
+        height: 60px;
     }
+    .main-line{
+        height: 6px;
+        background: url("../image/line.png") repeat;
+    }
+    h1{
+        color: #444444;
+        line-height: 50px;
+        font-size: 28px;
+        font-family: '微软雅黑',
+    }
+    .main-image {
+        width: 76%;
+        height: 320px;
+        margin: 20px auto;
+        .show-wrap{
+            overflow: hidden;
+            margin-top: 20px;
+            .show1{
+                background: url("../image/s1.png") no-repeat;
+            }
+            .show2{
+                background: url("../image/s2.png") no-repeat;
+            }
+            .show3{
+                background: url("../image/s3.png") no-repeat;
+            }
+            .show4{
+                background: url("../image/s4.png") no-repeat;
+            }
+            .show-list{
+                float: left;
+                height: 240px;
+                width: 22%;
+                margin-left: 2%;
+                background-size: cover;
+            }
+        }
+    }
+    .main-me {
+        width: 100%;
+        height: 400px;
+        background: url("../image/back.png") repeat;
+        .me-container{
+            width: 76%;
+            height: 100%;
+            margin: 0 auto;
+            .left{
+                float: left;
+                width: 48%;
+                margin-right: 4%;
+                img{
+                    width: 100%;
+                }
+            }
+
+            .right{
+                float: left;
+                width: 48%;
+
+            }
+
+
+
+        }
+
+    }
+}
+.banner1 {
+    background: url("../image/ban1.jpg") no-repeat;
+    background-size: cover;
+}
+.banner2 {
+    background: url("../image/ban2.jpg") no-repeat;
+    background-size: cover;
+}
+.banner3 {
+    background: url("../image/ban3.jpg") no-repeat;
+    background-size: cover;
 }
