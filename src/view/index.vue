@@ -16,7 +16,7 @@
                         @select="handleSelect"
                         style="height: 100%"
                     >
-                        <el-menu-item index="1">首页</el-menu-item>
+                        <el-menu-item index="1">首</el-menu-item>
                         <el-menu-item index="2">产品展示</el-menu-item>
                         <el-menu-item index="3">新闻资讯</el-menu-item>
                         <el-menu-item index="4">关于我们</el-menu-item>
